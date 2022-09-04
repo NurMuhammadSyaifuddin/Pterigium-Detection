@@ -177,9 +177,8 @@
                 android:id="@+id/img_ambil_foto"
                 android:layout_width="@dimen/dp_0"
                 android:layout_height="@dimen/dp_200"
-                android:layout_marginTop="@dimen/dp_16"
-                android:layout_marginBottom="@dimen/dp_16"
-                android:background="@color/gray"
+                android:layout_marginTop="@dimen/dp_24"
+                android:background="@drawable/bg_dotted_image"
                 android:src="@drawable/ic_camera"
                 app:layout_constraintBottom_toTopOf="@id/btn_prediksi"
                 app:layout_constraintEnd_toEndOf="@id/text_view_desc_step_2"
@@ -188,12 +187,40 @@
                 app:tint="@color/white"
                 tools:ignore="ContentDescription" />
 
+            <ImageView
+                android:id="@+id/image_camera"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_camera"
+                android:layout_marginBottom="@dimen/dp_4"
+                app:layout_constraintBottom_toTopOf="@id/text_view_ambil_foto"
+                app:layout_constraintTop_toTopOf="@id/img_ambil_foto"
+                app:layout_constraintStart_toStartOf="@id/img_ambil_foto"
+                app:layout_constraintEnd_toEndOf="@id/img_ambil_foto"
+                app:tint="@color/text_color_primary"
+                app:layout_constraintVertical_chainStyle="packed"
+                tools:ignore="ContentDescription" />
+
+            <TextView
+                android:id="@+id/text_view_ambil_foto"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_4"
+                android:text="@string/ambil_foto"
+                android:textColor="@color/text_color_primary"
+                android:fontFamily="@font/montserrat_bold"
+                android:textSize="@dimen/sp_16"
+                app:layout_constraintTop_toBottomOf="@id/image_camera"
+                app:layout_constraintBottom_toBottomOf="@id/img_ambil_foto"
+                app:layout_constraintStart_toStartOf="@id/img_ambil_foto"
+                app:layout_constraintEnd_toEndOf="@id/img_ambil_foto"/>
+
             <Button
                 android:id="@+id/btn_prediksi"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="@dimen/dp_16"
                 android:layout_marginBottom="@dimen/dp_16"
+                android:layout_marginTop="@dimen/dp_24"
                 android:background="@drawable/bg_btn_green"
                 android:fontFamily="@font/montserrat_regular"
                 android:paddingHorizontal="@dimen/dp_24"
@@ -273,17 +300,17 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="@dimen/dp_24"
                 android:background="@drawable/bg_result_blue"
-                android:textSize="@dimen/sp_20"
-                android:textAlignment="center"
-                android:textColor="@color/white"
                 android:fontFamily="@font/montserrat_bold"
                 android:paddingHorizontal="@dimen/dp_32"
-                android:paddingVertical="@dimen/dp_16"
-                android:text="@string/negatif_katarak"
+                android:paddingVertical="@dimen/dp_12"
+                android:text="@string/negatif_pterigium"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="@dimen/sp_20"
                 app:layout_constraintBottom_toTopOf="@id/tv_percent_negatif"
                 app:layout_constraintEnd_toEndOf="@id/text_view_desc_step_3"
                 app:layout_constraintStart_toStartOf="@id/text_view_desc_step_3"
-                app:layout_constraintTop_toBottomOf="@id/text_view_desc_step_3"/>
+                app:layout_constraintTop_toBottomOf="@id/text_view_desc_step_3" />
 
             <TextView
                 android:id="@+id/tv_percent_positif"
