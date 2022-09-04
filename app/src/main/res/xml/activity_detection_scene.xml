@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<MotionScene xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:motion="http://schemas.android.com/tools">
+
+    <ConstraintSet android:id="@+id/start"/>
+    <ConstraintSet android:id="@+id/end">
+        <Constraint
+            android:layout_width="@dimen/dp_0"
+            android:layout_height="@dimen/dp_0"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginBottom="@dimen/dp_64"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="@dimen/dp_48"
+            android:id="@+id/card_step_1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="24dp"
+            android:layout_marginEnd="24dp" />
+        <Constraint
+            android:id="@+id/menu1"
+            app:layout_constraintEnd_toStartOf="@+id/menu2"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_marginStart="32dp"
+            motion:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginBottom="16dp">
+            <CustomAttribute
+                app:attributeName="crossfade"
+                app:customFloatValue="1" />
+        </Constraint>
+        <Constraint
+            android:id="@+id/menu2"
+            app:layout_constraintEnd_toStartOf="@+id/menu3"
+            app:layout_constraintStart_toEndOf="@+id/menu1"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            app:layout_constraintBottom_toBottomOf="@+id/menu1"
+            app:layout_constraintTop_toTopOf="@+id/menu1" >
+            <CustomAttribute
+                app:attributeName="crossfade"
+                app:customFloatValue="0" />
+        </Constraint>
+        <Constraint
+            android:id="@+id/menu3"
+            app:layout_constraintStart_toEndOf="@+id/menu2"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            app:layout_constraintBottom_toBottomOf="@+id/menu2"
+            app:layout_constraintTop_toTopOf="@+id/menu2"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginEnd="32dp" >
+            <CustomAttribute
+                app:attributeName="crossfade"
+                app:customFloatValue="0" />
+        </Constraint>
+    </ConstraintSet>
+
+    <Transition
+        app:constraintSetEnd="@id/end"
+        app:constraintSetStart="@+id/start"
+        app:autoTransition="animateToEnd"
+        app:duration="1000" />
+    <ConstraintSet android:id="@+id/langkah2" >
+        <Constraint
+            android:id="@+id/card_step_2"
+            android:layout_width="@dimen/dp_0"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginBottom="@dimen/dp_64"
+            android:layout_marginEnd="@dimen/dp_24"
+            android:layout_marginStart="@dimen/dp_24"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="@dimen/dp_48"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+        <Constraint
+            android:layout_width="@dimen/dp_300"
+            android:layout_height="@dimen/dp_600"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginBottom="@dimen/dp_64"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="@dimen/dp_48"
+            android:id="@+id/card_step_1"
+            app:layout_constraintEnd_toStartOf="parent" />
+        <Constraint
+            android:id="@+id/menu1"
+            app:layout_constraintEnd_toStartOf="@+id/menu2"
+            android:layout_width="@dimen/dp_24"
+            android:layout_height="@dimen/dp_24"
+            android:layout_marginStart="@dimen/dp_32"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginBottom="@dimen/dp_16"
+            app:layout_constraintStart_toStartOf="parent" />
+        <Constraint
+            android:id="@+id/menu1"
+            app:layout_constraintEnd_toStartOf="@+id/menu2"
+            android:layout_width="@dimen/dp_24"
+            android:layout_height="@dimen/dp_24"
+            android:layout_marginStart="@dimen/dp_32"
+            android:layout_marginBottom="@dimen/dp_16"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent">
+            <CustomAttribute
+                app:attributeName="crossfade"
+                app:customFloatValue="0" />
+        </Constraint>
+        <Constraint
+            android:id="@+id/menu2"
+            app:layout_constraintEnd_toStartOf="@+id/menu3"
+            app:layout_constraintStart_toEndOf="@+id/menu1"
+            android:layout_width="@dimen/dp_24"
+            android:layout_height="@dimen/dp_24"
+            app:layout_constraintBottom_toBottomOf="@+id/menu1"
+            app:layout_constraintTop_toTopOf="@+id/menu1" />
+        <Constraint
+            android:id="@+id/menu2"
+            app:layout_constraintEnd_toStartOf="@+id/menu3"
+            app:layout_constraintStart_toEndOf="@+id/menu1"
+            android:layout_width="@dimen/dp_24"
+            android:layout_height="@dimen/dp_24"
+            app:layout_constraintBottom_toBottomOf="@+id/menu1"
+            app:layout_constraintTop_toTopOf="@+id/menu1">
+            <CustomAttribute
+                app:attributeName="crossfade"
+                app:customFloatValue="1" />
+        </Constraint>
+        <Constraint
+            android:id="@+id/menu3"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/menu2"
+            android:layout_width="@dimen/dp_24"
+            android:layout_height="@dimen/dp_24"
+            app:layout_constraintBottom_toBottomOf="@+id/menu2"
+            android:layout_marginEnd="@dimen/dp_32"
+            app:layout_constraintTop_toTopOf="@+id/menu2">
+            <CustomAttribute
+                app:attributeName="crossfade"
+                app:customFloatValue="0" />
+        </Constraint>
+    </ConstraintSet>
+    <Transition
+        app:constraintSetStart="@+id/end"
+        app:constraintSetEnd="@+id/langkah2"
+        app:duration="1000">
+        <OnClick app:targetId="@id/btn_next" />
+    </Transition>
+    <ConstraintSet android:id="@+id/langkah3" >
+        <Constraint
+            android:id="@+id/card_step_1"
+            app:layout_constraintEnd_toStartOf="parent"
+            android:layout_width="@dimen/dp_300"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginBottom="@dimen/dp_64"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="@dimen/dp_48" />
+
+        <Constraint
+            android:id="@+id/card_step_2"
+            app:layout_constraintEnd_toStartOf="parent"
+            android:layout_width="@dimen/dp_300"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginBottom="@dimen/dp_64"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="@dimen/dp_48" />
+
+        <Constraint
+            android:id="@+id/card_step_3"
+            android:layout_width="@dimen/dp_0"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginBottom="@dimen/dp_64"
+            android:layout_marginEnd="@dimen/dp_24"
+            android:layout_marginStart="@dimen/dp_24"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="@dimen/dp_48"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+        <Constraint
+            android:id="@+id/menu1"
+            app:layout_constraintEnd_toStartOf="@+id/menu2"
+            android:layout_width="@dimen/dp_24"
+            android:layout_height="@dimen/dp_24"
+            android:layout_marginBottom="@dimen/dp_16"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginStart="@dimen/dp_32"
+            app:layout_constraintStart_toStartOf="parent" >
+            <CustomAttribute
+                app:attributeName="crossfade"
+                app:customFloatValue="0" />
+        </Constraint>
+        <Constraint
+            android:id="@+id/menu2"
+            app:layout_constraintEnd_toStartOf="@+id/menu3"
+            app:layout_constraintStart_toEndOf="@+id/menu1"
+            android:layout_width="@dimen/dp_24"
+            android:layout_height="@dimen/dp_24"
+            app:layout_constraintBottom_toBottomOf="@+id/menu1"
+            app:layout_constraintTop_toTopOf="@+id/menu1">
+            <CustomAttribute
+                app:attributeName="crossfade"
+                app:customFloatValue="0" />
+        </Constraint>
+        <Constraint
+            android:id="@+id/menu3"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/menu2"
+            android:layout_width="@dimen/dp_24"
+            android:layout_height="@dimen/dp_24"
+            app:layout_constraintBottom_toBottomOf="@+id/menu2"
+            android:layout_marginEnd="@dimen/dp_32"
+            app:layout_constraintTop_toTopOf="@+id/menu2" >
+            <CustomAttribute
+                app:attributeName="crossfade"
+                app:customFloatValue="1" />
+        </Constraint>
+
+    </ConstraintSet>
+    <Transition
+        app:constraintSetStart="@+id/langkah2"
+        app:constraintSetEnd="@+id/langkah3"
+        app:duration="1000">
+        <OnClick app:targetId="@id/btn_prediksi" />
+    </Transition>
+</MotionScene>

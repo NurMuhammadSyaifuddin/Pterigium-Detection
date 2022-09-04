@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">Pterigium Detection</string>
+    <string name="yuk_cek_mata_anda">Yuk!!, Cek Mata Anda</string>
+    <string name="desc_cek_mata">Negatif Atau Positif Pterigium?</string>
+    <string name="apa_itu_pterigium">Apa Itu Pterigium?</string>
+    <string name="answer_pterigium">Pterigium merupakan pertumbuhan jaringan fibrovaskular patologis yang berasal dari penebalan dan lipatan konjungtiva bulbi yang bersifat degeneratif dan invasif. pertumbuhan jaringan tersebut berbentuk segitiga seperti sayap, didalamnya mengandung pembuluh darah dan jaringan yang berasal dari konjungtiva dan dapat menyebar ke limbus kornea dan seterusnya.</string>
+    <string name="apa_penyebab_pterigium">Apa Penyebab Pterigium?</string>
+    <string name="answer_penyebab_pterigium">Indonesia dilewati oleh garis khatulistiwa yang mengakibatkan sinar matahari terpancar sepanjang tahun. Sinar ultraviolet dari panas matahari adalah penyebab utama penyakit mata pterigium. Seseorang yang bekerja di luar ruangan, berisiko tinggi terjangkit penyakit ini.</string>
+    <string name="ayo_cek_mata_kamu_sekarang">Ayo, Cek Mata Kamu Sekarang</string>
+    <string name="lanjut">Lanjut</string>
+    <string name="langkah_1">Langkah 1</string>
+    <string name="persiapan">Persiapan</string>
+    <string name="desc_step_1"><![CDATA[Klik \"Lanjut\" untuk memulai mengambil foto, lalu pilih foto mata kamu & crop hingga mendekati pola mata, seperti gambar di bawah.]]></string>
+    <string name="note_step_1">Note:\nUntuk mendapatkan hasil prediksi yang maksimal, arahkan mata kamu ke depan kamera/ melirik ke samping kanan/ kiri, dan pastikan pencahayaannya baik.</string>
+    <string name="cek_mata">Cek Mata</string>
+    <string name="ambil_foto">Ambil Foto</string>
+    <string name="langkah_2">Langkah 2</string>
+    <string name="pilih_foto_mata_kamu">Pilih Foto Mata Kamu</string>
+    <string name="prediksi">Prediksi</string>
+    <string name="desc_step_2">Setelah mengambil foto, klik \"Prediksi\" untuk lanjut ke langkah 3 dan mendapatkan hasil prediksi</string>
+    <string name="langkah_3">Langkah 3</string>
+    <string name="hasil_deteksi_mata_kamu">Hasil Deteksi Mata Kamu</string>
+    <string name="desc_step_3">Hasil deteksi mata kamu ditampilkan beserta presentasi positif dan negatif pterigium.</string>
+    <string name="negatif_katarak">Negatif Katarak</string>
+    <string name="s_positif">$s Positif</string>
+    <string name="s_negatif">%s Negatif</string>
+</resources>

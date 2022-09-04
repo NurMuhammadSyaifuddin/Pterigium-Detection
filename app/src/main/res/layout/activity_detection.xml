@@ -1,0 +1,368 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.motion.widget.MotionLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".detection.DetectionActivity"
+    android:backgroundTint="@color/gray"
+    app:layoutDescription="@xml/activity_detection_scene">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_step_1"
+        android:layout_width="@dimen/dp_300"
+        android:layout_height="@dimen/dp_0"
+        android:layout_marginHorizontal="@dimen/dp_24"
+        android:layout_marginTop="@dimen/dp_48"
+        android:layout_marginBottom="@dimen/dp_64"
+        app:cardCornerRadius="@dimen/dp_16"
+        app:cardElevation="@dimen/dp_12"
+        app:layout_constraintStart_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/text_view_step_1"
+                android:layout_width="@dimen/dp_0"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/dp_16"
+                android:layout_marginTop="@dimen/dp_16"
+                android:fontFamily="@font/montserrat_bold"
+                android:text="@string/langkah_1"
+                android:textColor="@color/text_color_dark"
+                android:textSize="@dimen/sp_32"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/text_view_persiapan"
+                android:layout_width="@dimen/dp_0"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_8"
+                android:fontFamily="@font/montserrat_regular"
+                android:text="@string/persiapan"
+                android:textColor="@color/text_color_light"
+                android:textSize="@dimen/sp_16"
+                app:layout_constraintEnd_toEndOf="@id/text_view_step_1"
+                app:layout_constraintStart_toStartOf="@id/text_view_step_1"
+                app:layout_constraintTop_toBottomOf="@id/text_view_step_1" />
+
+            <TextView
+                android:id="@+id/text_view_desc_step_1"
+                android:layout_width="@dimen/dp_0"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_16"
+                android:fontFamily="@font/montserrat_regular"
+                android:lineSpacingExtra="@dimen/dp_2"
+                android:text="@string/desc_step_1"
+                android:textColor="@color/text_color_primary"
+                android:textSize="@dimen/sp_16"
+                app:layout_constraintEnd_toEndOf="@id/text_view_persiapan"
+                app:layout_constraintStart_toStartOf="@id/text_view_persiapan"
+                app:layout_constraintTop_toBottomOf="@id/text_view_persiapan" />
+
+            <TextView
+                android:id="@+id/text_view_note_step_1"
+                android:layout_width="@dimen/dp_0"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_16"
+                android:fontFamily="@font/montserrat_regular"
+                android:lineSpacingExtra="@dimen/dp_2"
+                android:text="@string/note_step_1"
+                android:textColor="@android:color/holo_red_light"
+                android:textSize="@dimen/sp_16"
+                android:textStyle="italic"
+                app:layout_constraintEnd_toEndOf="@id/text_view_desc_step_1"
+                app:layout_constraintStart_toStartOf="@id/text_view_desc_step_1"
+                app:layout_constraintTop_toBottomOf="@id/text_view_desc_step_1" />
+
+            <ImageView
+                android:id="@+id/image_view_image_crop_example"
+                android:layout_width="@dimen/dp_0"
+                android:layout_height="@dimen/dp_200"
+                android:layout_marginTop="@dimen/dp_16"
+                android:layout_marginBottom="@dimen/dp_16"
+                android:scaleType="fitXY"
+                android:src="@drawable/img_crop_example"
+                app:layout_constraintEnd_toEndOf="@id/text_view_note_step_1"
+                app:layout_constraintStart_toStartOf="@id/text_view_note_step_1"
+                app:layout_constraintTop_toBottomOf="@id/text_view_note_step_1"
+                app:layout_constraintBottom_toTopOf="@id/btn_next"
+                tools:ignore="ContentDescription" />
+
+            <Button
+                android:id="@+id/btn_next"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/dp_16"
+                android:background="@drawable/bg_btn_green"
+                android:fontFamily="@font/montserrat_regular"
+                android:paddingHorizontal="@dimen/dp_24"
+                android:text="@string/lanjut"
+                android:textAllCaps="false"
+                android:textSize="@dimen/sp_14"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_step_2"
+        android:layout_width="@dimen/dp_300"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/dp_24"
+        android:layout_marginTop="@dimen/dp_48"
+        android:layout_marginBottom="@dimen/dp_64"
+        app:cardCornerRadius="@dimen/dp_16"
+        app:cardElevation="@dimen/dp_12"
+        app:layout_constraintStart_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="435dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/text_view_step_2"
+                android:layout_width="@dimen/dp_0"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/dp_16"
+                android:layout_marginTop="@dimen/dp_16"
+                android:fontFamily="@font/montserrat_bold"
+                android:text="@string/langkah_2"
+                android:textColor="@color/text_color_dark"
+                android:textSize="@dimen/sp_32"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/text_view_pilih_foto_mata_kamu"
+                android:layout_width="@dimen/dp_0"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_8"
+                android:fontFamily="@font/montserrat_regular"
+                android:text="@string/pilih_foto_mata_kamu"
+                android:textColor="@color/text_color_light"
+                android:textSize="@dimen/sp_16"
+                app:layout_constraintEnd_toEndOf="@id/text_view_step_2"
+                app:layout_constraintStart_toStartOf="@id/text_view_step_2"
+                app:layout_constraintTop_toBottomOf="@id/text_view_step_2" />
+
+            <TextView
+                android:id="@+id/text_view_desc_step_2"
+                android:layout_width="@dimen/dp_0"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_16"
+                android:fontFamily="@font/montserrat_regular"
+                android:lineSpacingExtra="@dimen/dp_2"
+                android:text="@string/desc_step_2"
+                android:textColor="@color/text_color_primary"
+                android:textSize="@dimen/sp_16"
+                app:layout_constraintEnd_toEndOf="@id/text_view_pilih_foto_mata_kamu"
+                app:layout_constraintStart_toStartOf="@id/text_view_pilih_foto_mata_kamu"
+                app:layout_constraintTop_toBottomOf="@id/text_view_pilih_foto_mata_kamu" />
+
+            <ImageView
+                android:id="@+id/img_ambil_foto"
+                android:layout_width="@dimen/dp_0"
+                android:layout_height="@dimen/dp_200"
+                android:layout_marginTop="@dimen/dp_16"
+                android:layout_marginBottom="@dimen/dp_16"
+                android:background="@color/gray"
+                android:src="@drawable/ic_camera"
+                app:layout_constraintBottom_toTopOf="@id/btn_prediksi"
+                app:layout_constraintEnd_toEndOf="@id/text_view_desc_step_2"
+                app:layout_constraintStart_toStartOf="@id/text_view_desc_step_2"
+                app:layout_constraintTop_toBottomOf="@id/text_view_desc_step_2"
+                app:tint="@color/white"
+                tools:ignore="ContentDescription" />
+
+            <Button
+                android:id="@+id/btn_prediksi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_16"
+                android:layout_marginBottom="@dimen/dp_16"
+                android:background="@drawable/bg_btn_green"
+                android:fontFamily="@font/montserrat_regular"
+                android:paddingHorizontal="@dimen/dp_24"
+                android:text="@string/prediksi"
+                android:textAllCaps="false"
+                android:textSize="@dimen/sp_14"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/img_ambil_foto" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_step_3"
+        android:layout_width="@dimen/dp_300"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/dp_24"
+        android:layout_marginTop="@dimen/dp_48"
+        android:layout_marginBottom="@dimen/dp_64"
+        app:cardCornerRadius="@dimen/dp_16"
+        app:cardElevation="@dimen/dp_12"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/text_view_step_3"
+                android:layout_width="@dimen/dp_0"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/dp_16"
+                android:layout_marginTop="@dimen/dp_16"
+                android:fontFamily="@font/montserrat_bold"
+                android:text="@string/langkah_3"
+                android:textColor="@color/text_color_dark"
+                android:textSize="@dimen/sp_32"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/text_view_hasil_deteksi_mata_kamu"
+                android:layout_width="@dimen/dp_0"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_8"
+                android:fontFamily="@font/montserrat_regular"
+                android:text="@string/hasil_deteksi_mata_kamu"
+                android:textColor="@color/text_color_light"
+                android:textSize="@dimen/sp_16"
+                app:layout_constraintEnd_toEndOf="@id/text_view_step_3"
+                app:layout_constraintStart_toStartOf="@id/text_view_step_3"
+                app:layout_constraintTop_toBottomOf="@id/text_view_step_3" />
+
+            <TextView
+                android:id="@+id/text_view_desc_step_3"
+                android:layout_width="@dimen/dp_0"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_16"
+                android:text="@string/desc_step_3"
+                android:textSize="@dimen/sp_16"
+                android:lineSpacingExtra="@dimen/dp_2"
+                android:textColor="@color/text_color_primary"
+                android:fontFamily="@font/montserrat_regular"
+                app:layout_constraintTop_toBottomOf="@id/text_view_hasil_deteksi_mata_kamu"
+                app:layout_constraintStart_toStartOf="@id/text_view_hasil_deteksi_mata_kamu"
+                app:layout_constraintEnd_toEndOf="@id/text_view_hasil_deteksi_mata_kamu"/>
+
+            <TextView
+                android:id="@+id/tv_result"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_24"
+                android:background="@drawable/bg_result_blue"
+                android:textSize="@dimen/sp_20"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:fontFamily="@font/montserrat_bold"
+                android:paddingHorizontal="@dimen/dp_32"
+                android:paddingVertical="@dimen/dp_16"
+                android:text="@string/negatif_katarak"
+                app:layout_constraintBottom_toTopOf="@id/tv_percent_negatif"
+                app:layout_constraintEnd_toEndOf="@id/text_view_desc_step_3"
+                app:layout_constraintStart_toStartOf="@id/text_view_desc_step_3"
+                app:layout_constraintTop_toBottomOf="@id/text_view_desc_step_3"/>
+
+            <TextView
+                android:id="@+id/tv_percent_positif"
+                android:layout_width="@dimen/dp_0"
+                android:layout_height="wrap_content"
+                android:text="@string/s_positif"
+                android:textColor="@color/white"
+                android:textSize="@dimen/sp_16"
+                android:padding="@dimen/dp_8"
+                android:textAlignment="center"
+                android:background="@drawable/bg_percent_red"
+                android:fontFamily="@font/montserrat_regular"
+                android:layout_marginTop="@dimen/dp_24"
+                android:layout_marginBottom="@dimen/dp_16"
+                android:layout_marginEnd="@dimen/dp_8"
+                app:layout_constraintEnd_toStartOf="@id/tv_percent_negatif"
+                app:layout_constraintTop_toBottomOf="@id/tv_result"
+                app:layout_constraintStart_toStartOf="@id/tv_result"
+                app:layout_constraintBottom_toBottomOf="parent"/>
+
+            <TextView
+                android:id="@+id/tv_percent_negatif"
+                android:layout_width="@dimen/dp_0"
+                android:layout_height="wrap_content"
+                android:text="@string/s_negatif"
+                android:textColor="@color/white"
+                android:textSize="@dimen/sp_16"
+                android:padding="@dimen/dp_8"
+                android:layout_marginTop="@dimen/dp_24"
+                android:layout_marginStart="@dimen/dp_8"
+                android:textAlignment="center"
+                android:background="@drawable/bg_percent_blue"
+                android:fontFamily="@font/montserrat_regular"
+                android:layout_marginBottom="@dimen/dp_16"
+                app:layout_constraintTop_toBottomOf="@id/tv_result"
+                app:layout_constraintEnd_toEndOf="@id/tv_result"
+                app:layout_constraintStart_toEndOf="@id/tv_percent_positif"
+                app:layout_constraintBottom_toBottomOf="parent"/>
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.constraintlayout.utils.widget.ImageFilterView
+        android:id="@+id/menu1"
+        android:layout_width="@dimen/dp_24"
+        android:layout_height="@dimen/dp_24"
+        android:layout_marginStart="@dimen/dp_32"
+        app:altSrc="@drawable/ic_circle_full_24"
+        app:layout_constraintEnd_toStartOf="@+id/menu2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="parent"
+        app:srcCompat="@drawable/ic_circle_24"
+        app:tint="@color/color_primary" />
+
+    <androidx.constraintlayout.utils.widget.ImageFilterView
+        android:id="@+id/menu2"
+        android:layout_width="@dimen/dp_24"
+        android:layout_height="@dimen/dp_24"
+        app:altSrc="@drawable/ic_circle_full_24"
+        app:layout_constraintBottom_toBottomOf="@+id/menu1"
+        app:layout_constraintEnd_toStartOf="@+id/menu3"
+        app:layout_constraintStart_toEndOf="@+id/menu1"
+        app:layout_constraintTop_toTopOf="@+id/menu1"
+        app:srcCompat="@drawable/ic_circle_24"
+        app:tint="@color/color_primary" />
+
+    <androidx.constraintlayout.utils.widget.ImageFilterView
+        android:id="@+id/menu3"
+        android:layout_width="@dimen/dp_24"
+        android:layout_height="@dimen/dp_24"
+        app:altSrc="@drawable/ic_circle_full_24"
+        android:layout_marginEnd="@dimen/dp_32"
+        app:layout_constraintBottom_toBottomOf="@+id/menu2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/menu2"
+        app:layout_constraintStart_toEndOf="@id/menu2"
+        app:srcCompat="@drawable/ic_circle_24"
+        app:tint="@color/color_primary" />
+
+</androidx.constraintlayout.motion.widget.MotionLayout>

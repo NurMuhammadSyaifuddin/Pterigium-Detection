@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    tools:context=".main.MainActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <View
+            android:id="@+id/view_logo"
+            android:layout_width="@dimen/dp_0"
+            android:layout_height="170dp"
+            android:layout_marginEnd="@dimen/dp_16"
+            android:background="@drawable/view_logo_dashboard"
+            app:layout_constraintBottom_toBottomOf="@id/image_view_logo"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@id/text_view_cek_mata" />
+
+        <ImageView
+            android:id="@+id/image_view_logo"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:adjustViewBounds="true"
+            android:scaleType="fitXY"
+            android:src="@drawable/logo"
+            app:layout_constraintBottom_toBottomOf="@id/view_logo"
+            app:layout_constraintEnd_toEndOf="@id/view_logo"
+            app:layout_constraintStart_toEndOf="@id/text_view_cek_mata"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="ContentDescription" />
+
+        <TextView
+            android:id="@+id/text_view_cek_mata"
+            android:layout_width="@dimen/dp_0"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_16"
+            android:layout_marginStart="@dimen/dp_16"
+            android:fontFamily="@font/montserrat_bold"
+            android:text="@string/yuk_cek_mata_anda"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp_18"
+            app:layout_constraintEnd_toStartOf="@id/image_view_logo"
+            app:layout_constraintStart_toStartOf="@id/view_logo"
+            app:layout_constraintTop_toTopOf="@id/view_logo" />
+
+        <TextView
+            android:id="@+id/text_view_desc_cek_mata"
+            android:layout_width="@dimen/dp_0"
+            android:layout_height="@dimen/dp_0"
+            android:layout_marginVertical="@dimen/dp_16"
+            android:fontFamily="@font/montserrat_regular"
+            android:lineSpacingExtra="@dimen/dp_2"
+            android:text="@string/desc_cek_mata"
+            android:textColor="@color/gray"
+            android:textSize="@dimen/sp_14"
+            android:layout_marginEnd="@dimen/dp_8"
+            app:layout_constraintBottom_toBottomOf="@id/view_logo"
+            app:layout_constraintEnd_toEndOf="@id/text_view_cek_mata"
+            app:layout_constraintStart_toStartOf="@id/text_view_cek_mata"
+            app:layout_constraintTop_toBottomOf="@id/text_view_cek_mata" />
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card_view"
+            android:layout_width="@dimen/dp_0"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="@dimen/dp_16"
+            app:cardElevation="@dimen/dp_12"
+            android:layout_marginTop="@dimen/dp_24"
+            android:layout_marginStart="@dimen/dp_16"
+            android:layout_marginEnd="@dimen/dp_16"
+            android:layout_marginBottom="@dimen/dp_16"
+            android:backgroundTint="@color/gray"
+            app:contentPaddingTop="@dimen/dp_16"
+            app:contentPaddingBottom="@dimen/dp_16"
+            app:layout_constraintTop_toBottomOf="@id/view_logo"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/layout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/text_view_question_pterigium"
+                    android:layout_width="@dimen/dp_0"
+                    android:layout_height="wrap_content"
+                    android:text="@string/apa_itu_pterigium"
+                    android:fontFamily="@font/montserrat_bold"
+                    android:textSize="@dimen/sp_16"
+                    android:textColor="@color/text_color_dark"
+                    android:layout_marginHorizontal="@dimen/dp_16"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"/>
+
+                <TextView
+                    android:id="@+id/text_view_answer_pterigium"
+                    android:layout_width="@dimen/dp_0"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp_8"
+                    android:fontFamily="@font/montserrat_regular"
+                    android:text="@string/answer_pterigium"
+                    android:lineSpacingExtra="@dimen/dp_2"
+                    android:textColor="@color/text_color_primary"
+                    android:textSize="@dimen/sp_14"
+                    android:visibility="gone"
+                    app:layout_constraintTop_toBottomOf="@id/text_view_question_pterigium"
+                    app:layout_constraintStart_toStartOf="@id/text_view_question_pterigium"
+                    app:layout_constraintEnd_toEndOf="@id/text_view_question_pterigium"/>
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card_view_2"
+            android:layout_width="@dimen/dp_0"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="@dimen/dp_16"
+            app:cardElevation="@dimen/dp_12"
+            android:layout_margin="@dimen/dp_16"
+            android:backgroundTint="@color/gray"
+            app:contentPaddingTop="@dimen/dp_16"
+            app:contentPaddingBottom="@dimen/dp_16"
+            app:layout_constraintTop_toBottomOf="@id/card_view"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/layout2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/text_view_question_penyebab_pterigium"
+                    android:layout_width="@dimen/dp_0"
+                    android:layout_height="wrap_content"
+                    android:text="@string/apa_penyebab_pterigium"
+                    android:fontFamily="@font/montserrat_bold"
+                    android:textSize="@dimen/sp_16"
+                    android:textColor="@color/text_color_dark"
+                    android:layout_marginHorizontal="@dimen/dp_16"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"/>
+
+                <TextView
+                    android:id="@+id/text_view_answer_penyebab_pterigium"
+                    android:layout_width="@dimen/dp_0"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp_8"
+                    android:fontFamily="@font/montserrat_regular"
+                    android:text="@string/answer_penyebab_pterigium"
+                    android:lineSpacingExtra="@dimen/dp_2"
+                    android:textColor="@color/text_color_primary"
+                    android:textSize="@dimen/sp_14"
+                    android:visibility="gone"
+                    app:layout_constraintTop_toBottomOf="@id/text_view_question_penyebab_pterigium"
+                    app:layout_constraintStart_toStartOf="@id/text_view_question_penyebab_pterigium"
+                    app:layout_constraintEnd_toEndOf="@id/text_view_question_penyebab_pterigium"/>
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:id="@+id/text_view_ayo_cek_mata"
+            android:layout_width="@dimen/dp_0"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_24"
+            android:text="@string/ayo_cek_mata_kamu_sekarang"
+            android:textAlignment="center"
+            android:fontFamily="@font/montserrat_bold"
+            android:textColor="@android:color/holo_red_light"
+            android:textSize="@dimen/sp_16"
+            app:layout_constraintTop_toBottomOf="@id/card_view_2"
+            app:layout_constraintStart_toStartOf="@id/card_view_2"
+            app:layout_constraintEnd_toEndOf="@id/card_view_2"/>
+
+        <Button
+            android:id="@+id/btn_cek_mata"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_8"
+            android:textAllCaps="false"
+            android:text="@string/cek_mata"
+            android:fontFamily="@font/montserrat_regular"
+            android:textColor="@color/white"
+            android:background="@drawable/bg_btn_green"
+            android:paddingHorizontal="@dimen/dp_24"
+            android:textSize="@dimen/sp_14"
+            app:layout_constraintTop_toBottomOf="@id/text_view_ayo_cek_mata"
+            app:layout_constraintStart_toStartOf="@id/text_view_ayo_cek_mata"
+            app:layout_constraintEnd_toEndOf="@id/text_view_ayo_cek_mata"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.core.widget.NestedScrollView>
