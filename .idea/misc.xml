@@ -8,12 +8,16 @@
         <entry key="..\:/PROJECT/TUGAS AKHIR/Pterigium Detection/app/src/main/res/drawable/bg_dotted_image.xml" value="0.197" />
         <entry key="..\:/PROJECT/TUGAS AKHIR/Pterigium Detection/app/src/main/res/drawable/bg_percent_blue.xml" value="0.197" />
         <entry key="..\:/PROJECT/TUGAS AKHIR/Pterigium Detection/app/src/main/res/drawable/bg_percent_red.xml" value="0.197" />
+        <entry key="..\:/PROJECT/TUGAS AKHIR/Pterigium Detection/app/src/main/res/drawable/bg_pick.xml" value="0.197" />
         <entry key="..\:/PROJECT/TUGAS AKHIR/Pterigium Detection/app/src/main/res/drawable/bg_result_blue.xml" value="0.197" />
         <entry key="..\:/PROJECT/TUGAS AKHIR/Pterigium Detection/app/src/main/res/drawable/bg_result_red.xml" value="0.197" />
         <entry key="..\:/PROJECT/TUGAS AKHIR/Pterigium Detection/app/src/main/res/drawable/ic_camera.xml" value="0.197" />
+        <entry key="..\:/PROJECT/TUGAS AKHIR/Pterigium Detection/app/src/main/res/drawable/ic_camera_24.xml" value="0.197" />
+        <entry key="..\:/PROJECT/TUGAS AKHIR/Pterigium Detection/app/src/main/res/drawable/ic_gallery.xml" value="0.197" />
         <entry key="..\:/PROJECT/TUGAS AKHIR/Pterigium Detection/app/src/main/res/drawable/view_logo_dashboard.xml" value="0.1905" />
         <entry key="..\:/PROJECT/TUGAS AKHIR/Pterigium Detection/app/src/main/res/layout/activity_detection.xml" value="0.25" />
         <entry key="..\:/PROJECT/TUGAS AKHIR/Pterigium Detection/app/src/main/res/layout/activity_main.xml" value="0.25" />
+        <entry key="..\:/PROJECT/TUGAS AKHIR/Pterigium Detection/app/src/main/res/layout/layout_bottom_pick.xml" value="0.2" />
       </map>
     </option>
   </component>

@@ -22,6 +22,10 @@
     <string name="hasil_deteksi_mata_kamu">Hasil Deteksi Mata Kamu</string>
     <string name="desc_step_3">Hasil deteksi mata kamu ditampilkan beserta presentasi positif dan negatif pterigium.</string>
     <string name="negatif_pterigium">Negatif Pterigium</string>
-    <string name="s_positif">$s Positif</string>
+    <string name="s_positif">%s Positif</string>
     <string name="s_negatif">%s Negatif</string>
+    <string name="ambil_foto_mata_kamu">Ambil Foto Mata Kamu</string>
+    <string name="camera">Camera</string>
+    <string name="gallery">Gallery</string>
+    <string name="positif_pterigium">Positif Pterigium</string>
 </resources>

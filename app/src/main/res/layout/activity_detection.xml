@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.motion.widget.MotionLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/motion_layout"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -84,7 +85,7 @@
             <ImageView
                 android:id="@+id/image_view_image_crop_example"
                 android:layout_width="@dimen/dp_0"
-                android:layout_height="@dimen/dp_200"
+                android:layout_height="@dimen/dp_0"
                 android:layout_marginTop="@dimen/dp_16"
                 android:layout_marginBottom="@dimen/dp_16"
                 android:scaleType="fitXY"
@@ -104,6 +105,7 @@
                 android:fontFamily="@font/montserrat_regular"
                 android:paddingHorizontal="@dimen/dp_24"
                 android:text="@string/lanjut"
+                android:textColor="@color/white"
                 android:textAllCaps="false"
                 android:textSize="@dimen/sp_14"
                 app:layout_constraintBottom_toBottomOf="parent"
@@ -178,13 +180,27 @@
                 android:layout_width="@dimen/dp_0"
                 android:layout_height="@dimen/dp_200"
                 android:layout_marginTop="@dimen/dp_24"
+                android:layout_marginBottom="@dimen/dp_24"
                 android:background="@drawable/bg_dotted_image"
-                android:src="@drawable/ic_camera"
                 app:layout_constraintBottom_toTopOf="@id/btn_prediksi"
                 app:layout_constraintEnd_toEndOf="@id/text_view_desc_step_2"
                 app:layout_constraintStart_toStartOf="@id/text_view_desc_step_2"
                 app:layout_constraintTop_toBottomOf="@id/text_view_desc_step_2"
                 app:tint="@color/white"
+                tools:ignore="ContentDescription" />
+
+            <ImageView
+                android:id="@+id/img_ambil_foto_result"
+                android:layout_width="@dimen/dp_0"
+                android:layout_height="@dimen/dp_200"
+                android:visibility="gone"
+                android:layout_marginTop="@dimen/dp_24"
+                android:layout_marginBottom="@dimen/dp_24"
+                android:background="@color/gray"
+                app:layout_constraintBottom_toTopOf="@id/btn_prediksi"
+                app:layout_constraintEnd_toEndOf="@id/text_view_desc_step_2"
+                app:layout_constraintStart_toStartOf="@id/text_view_desc_step_2"
+                app:layout_constraintTop_toBottomOf="@id/text_view_desc_step_2"
                 tools:ignore="ContentDescription" />
 
             <ImageView
@@ -220,17 +236,16 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="@dimen/dp_16"
-                android:layout_marginTop="@dimen/dp_24"
                 android:background="@drawable/bg_btn_green"
                 android:fontFamily="@font/montserrat_regular"
                 android:paddingHorizontal="@dimen/dp_24"
                 android:text="@string/prediksi"
                 android:textAllCaps="false"
                 android:textSize="@dimen/sp_14"
+                android:textColor="@color/white"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/img_ambil_foto" />
+                app:layout_constraintStart_toStartOf="parent"/>
 
         </androidx.constraintlayout.widget.ConstraintLayout>
 
