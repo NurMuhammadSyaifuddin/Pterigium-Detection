@@ -25,7 +25,7 @@
     <string name="s_positif">%s Positif</string>
     <string name="s_negatif">%s Negatif</string>
     <string name="ambil_foto_mata_kamu">Ambil Foto Mata Kamu</string>
-    <string name="camera">Camera</string>
-    <string name="gallery">Gallery</string>
+    <string name="camera">Kamera</string>
+    <string name="gallery">Galeri</string>
     <string name="positif_pterigium">Positif Pterigium</string>
 </resources>
